@@ -1,7 +1,7 @@
 
 const clickButton= document.getElementById('clickButton');
-
-clickButton.addEventListener("click",function(){
+const addWork=()=>{
+    
     let newWorkName= document.getElementById("workName").value;
     let newWorkDetails= document.getElementById("workDetails").value;
 
@@ -31,5 +31,7 @@ const work ={
     
     document.getElementById("workName").value="";
     document.getElementById("workDetails").value="";
-}
-)
+
+};
+
+clickButton.addEventListener("click",addWork);
